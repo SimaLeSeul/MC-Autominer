@@ -1,2 +1,4 @@
 autobackup.py
 lancer_autominer.bat
+pycache
+*.pyc

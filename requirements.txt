@@ -1,8 +1,48 @@
 # Dépendances pour le Script de Minage Automatique Minecraft (v1.3)
 # Installation: pip install -r requirements.txt
 
-# Surveillance des touches clavier (hotkeys)
+# =============================================================================
+# AUTOMATION DE BASE (Contrôle clavier/souris)
+# =============================================================================
+# Surveillance des touches clavier (hotkeys F8, F9, Q)
 keyboard==0.13.5
 
+# Contrôle de la souris et des touches clavier (clics, mouvements)
+pydirectinput>=1.0.4
+
 # Détection de fenêtres Windows
-pygetwindow==0.0.54
+pygetwindow==0.0.5
+
+# =============================================================================
+# CAPTURE D'ÉCRAN ET VISION PAR ORDINATEUR (Block Detection)
+# =============================================================================
+# Capture d'écran ultra-rapide (beaucoup plus rapide que PIL/pyautogui)
+mss>=10.0.0
+
+# Traitement d'image (grayscale, thresholding, morphological operations)
+# Version 4.10.x compatible avec Python 3.13
+opencv-python>=4.10.0
+
+# Calculs matriciels pour OpenCV
+# Version 2.1+ compatible avec Python 3.13
+numpy>=2.1.0
+
+# =============================================================================
+# OCR (Reconnaissance de Texte - WAILA Block Detection)
+# =============================================================================
+# Interface Python pour Tesseract OCR
+pytesseract>=0.3.13
+
+# =============================================================================
+# INSTRUCTIONS D'INSTALLATION
+# =============================================================================
+# 1. Installer les dépendances Python:
+#    pip install -r requirements.txt
+#
+# 2. Installer Tesseract OCR (requis par pytesseract):
+#    Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#    (Télécharger et installer le setup exe, noter le chemin d'installation)
+#
+# 3. Configurer pytesseract dans Python (si nécessaire):
+#    import pytesseract
+#    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract\tesseract.exe'
