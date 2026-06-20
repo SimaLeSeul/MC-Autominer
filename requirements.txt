@@ -1,0 +1,8 @@
+# Dépendances pour le Script de Minage Automatique Minecraft (v1.3)
+# Installation: pip install -r requirements.txt
+
+# Surveillance des touches clavier (hotkeys)
+keyboard==0.13.5
+
+# Détection de fenêtres Windows
+pygetwindow==0.0.54
